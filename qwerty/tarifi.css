@@ -1,0 +1,352 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #417a9b;
+}
+
+.menu {
+  position: fixed; /*фиксированное меню*/
+  display: flex; 
+  justify-content: center; /*центрирование всех пунктов меню*/
+  align-items: center; 
+  background-color: #333; /*заливка каждого пункта меню*/
+  color: #fff; /*цвет текста каждого меню*/
+  font-size: 20px; /*размер текста*/
+  padding: 10px; /*внутренние отступы каждой кнопки меню*/
+  margin-top: -10px; /*верхний отступ*/
+  margin-left: -10px; /*левый отступ*/
+  width: 100%; /*ширина на весь экран*/
+  height: 50px; /*высота*/
+}
+
+ul {
+  display: flex; 
+  list-style: none; /*убираем подчеркивания*/
+}
+
+li {
+  margin-top: 5px;
+  margin-right: 20px; /*отступ между каждым пунктом меню*/
+}
+
+a {
+  color: #fff; /*ссылки*/
+  text-decoration: none; /*убираем подчеркивания*/
+}
+
+.burger {
+  display: none;
+  cursor: pointer; /*анимация при наведении*/
+}
+
+.line {
+  width: 30px; 
+  height: 3px;
+  margin: 0px;
+  background-color: #fff;
+}
+
+.menu a:hover {
+  
+  background: #76b900; /*закраска цвета при наведении на любой пункт меню*/
+}
+
+@media (max-width: 768px) {
+  .menu {
+    position: fixed;
+    height: 150px;
+    margin-left: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul {
+    position: fixed;
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+
+  li {
+    margin: 0px 0;
+  }
+
+  .burger {
+    position: fixed;
+    display: block;
+  }
+
+  .blok1{
+    width: 100%;
+    height: 500px;
+    margin-left: 200px;
+    margin-right: 0px;
+    text-align: center;
+  }
+  
+  .blok1 img{
+    margin-top: 50px;
+    width: 100%;
+    height: 500px;
+    margin-left: -40px;
+    margin-right: -20px;
+    text-align: center;
+  }
+  
+  .navbar1 img{
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    height: 55px;
+    width: 155px;
+  }
+
+  .card{
+    position: absolute;
+    width: 375px;
+    height: 350px;
+    background-color: #333;
+    border-radius: 8px;
+    top: 100px;
+    left: -250px;
+    color: white;
+  }
+  
+  .card h2{
+    margin: 15px;
+    font-family: sans-serif;
+  }
+  
+  .card h3{
+    margin-top: 25px;
+    margin-left: 15px;
+    font-family: sans-serif;
+  }
+  
+  .card p{
+    margin: 15px;
+    font-family: sans-serif;
+  }
+  
+  .card button{
+    margin-left: 100px;
+    margin-top: 0px;
+    font-family: sans-serif;
+    width: 150px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  
+  .card2{
+    position: absolute;
+    width: 375px;
+    height: 350px;
+    background-color: #209d56;
+    border-radius: 8px;
+    top: 500px;
+    left: -700px;
+    color: white;
+  }
+  
+  .card2 h2{
+    margin: 15px;
+    font-family: sans-serif;
+  }
+  
+  .card2 h3{
+    margin-top: 25px;
+    margin-left: 15px;
+    font-family: sans-serif;
+  }
+  
+  .card2 p{
+    margin: 15px;
+    font-family: sans-serif;
+  }
+  
+  .card2 button{
+    margin-left: 100px;
+    margin-top: 0px;
+    font-family: sans-serif;
+    width: 150px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  
+  .card3{
+    position: absolute;
+    width: 375px;
+    height: 350px;
+    background-color: #209d56;
+    border-radius: 8px;
+    top: 900px;
+    left: -1150px;
+    color: white;
+  }
+  
+  .card3 h2{
+    margin: 15px;
+    font-family: sans-serif;
+  }
+  
+  .card3 h3{
+    margin-top: 25px;
+    margin-left: 15px;
+    font-family: sans-serif;
+  }
+  
+  .card3 p{
+    margin: 15px;
+    font-family: sans-serif;
+  }
+  
+  .card3 button{
+    margin-left: 100px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    width: 150px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+}
+
+.blok1{
+  width: 100%;
+  height: 500px;
+  margin-left: 0px;
+  margin-right: 0px;
+  text-align: center;
+}
+
+.blok1 img{
+  margin-top: 50px;
+  width: 100%;
+  height: 500px;
+  margin-left: -20px;
+  margin-right: -20px;
+  text-align: center;
+}
+
+.navbar1 img{
+  height: 55px;
+  width: 155px;
+  margin-left: -300px;
+  margin-top: 15px;
+}
+
+.card{
+  position: absolute;
+  width: 375px;
+  height: 350px;
+  background-color: #333;
+  border-radius: 8px;
+  margin-top: 100px;
+  margin-left: 250px;
+  color: white;
+}
+
+.card h2{
+  margin: 15px;
+  font-family: sans-serif;
+}
+
+.card h3{
+  margin-top: 25px;
+  margin-left: 15px;
+  font-family: sans-serif;
+}
+
+.card p{
+  margin: 15px;
+  font-family: sans-serif;
+}
+
+.card button{
+  margin-left: 100px;
+  margin-top: 0px;
+  font-family: sans-serif;
+  width: 150px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.card2{
+  position: absolute;
+  width: 375px;
+  height: 350px;
+  background-color: #209d56;
+  border-radius: 8px;
+  margin-top: 100px;
+  margin-left: 700px;
+  color: white;
+}
+
+.card2 h2{
+  margin: 15px;
+  font-family: sans-serif;
+}
+
+.card2 h3{
+  margin-top: 25px;
+  margin-left: 15px;
+  font-family: sans-serif;
+}
+
+.card2 p{
+  margin: 15px;
+  font-family: sans-serif;
+}
+
+.card2 button{
+  margin-left: 100px;
+  margin-top: 0px;
+  font-family: sans-serif;
+  width: 150px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.card3{
+  position: absolute;
+  width: 375px;
+  height: 350px;
+  background-color: #209d56;
+  border-radius: 8px;
+  margin-top: 100px;
+  margin-left: 1150px;
+  color: white;
+}
+
+.card3 h2{
+  margin: 15px;
+  font-family: sans-serif;
+}
+
+.card3 h3{
+  margin-top: 25px;
+  margin-left: 15px;
+  font-family: sans-serif;
+}
+
+.card3 p{
+  margin: 15px;
+  font-family: sans-serif;
+}
+
+.card3 button{
+  margin-left: 100px;
+  margin-top: 20px;
+  font-family: sans-serif;
+  width: 150px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 8px;
+}

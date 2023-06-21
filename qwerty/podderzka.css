@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    background-color: #417a9b;
+  }
+  
+  .menu {
+    position: fixed; /*фиксированное меню*/
+    display: flex; 
+    justify-content: center; /*центрирование всех пунктов меню*/
+    align-items: center; 
+    background-color: #333; /*заливка каждого пункта меню*/
+    color: #fff; /*цвет текста каждого меню*/
+    font-size: 20px; /*размер текста*/
+    padding: 10px; /*внутренние отступы каждой кнопки меню*/
+    margin-top: -8px; /*верхний отступ*/
+    margin-left: -10px; /*левый отступ*/
+    width: 100%; /*ширина на весь экран*/
+    height: 50px; /*высота*/
+  }
+  
+  ul {
+    display: flex; 
+    list-style: none; /*убираем подчеркивания*/
+  }
+  
+  li {
+    margin-top: 5px;
+    margin-right: 20px; /*отступ между каждым пунктом меню*/
+  }
+  
+  a {
+    color: #fff; /*ссылки*/
+    text-decoration: none; /*убираем подчеркивания*/
+  }
+  
+  .burger {
+    display: none;
+    cursor: pointer; /*анимация при наведении*/
+  }
+  
+  .line {
+    width: 30px; 
+    height: 3px;
+    margin: 0px;
+    background-color: #fff;
+  }
+  
+  .menu a:hover {
+    
+    background: #76b900; /*закраска цвета при наведении на любой пункт меню*/
+  }
+  
+  @media (max-width: 768px) {
+    .menu {
+      position: fixed;
+      height: 130px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    ul {
+      position: fixed;
+      flex-direction: column;
+      width: 100%;
+      display: none;
+    }
+  
+    li {
+      margin: 0px 0;
+    }
+  
+    .burger {
+      position: fixed;
+      display: block;
+    }
+  }
+  
+  .navbar1 img{
+    height: 55px;
+    width: 155px;
+    margin-left: -300px;
+    margin-top: 10px;
+  }
+
+  .container{
+    background-color: #417a9b;
+  }
+
+  .container .container2{
+    position: absolute;
+    top: 100px;
+    left: 725px;
+    font-size: 40px;
+    color: #fff;
+    font-family: sans-serif;;
+    text-decoration: center;
+  }
+
+  .container .container3{
+    position: absolute;
+    top: 175px;
+    left: 775px;
+    font-size: 20px;
+    color: #fff;
+    font-family: Rubik,Noto Sans Armenian,sans-serif;;
+    text-decoration: center;
+  }
+
+.container .container4{
+    position: absolute;
+    top: 355px;
+    left: 200px;
+    font-size: 25px;
+    color: #000000;
+    font-family: sans-serif;
+    text-decoration: center;
+  }
+
+  .container4{
+    margin-top: -90px;
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+
+  .container4 p{
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+  }
+
+  .container .container5{
+    position: absolute;
+    top: 350px;
+    left: -1000px;
+    font-size: 25px;
+    color: #000000;
+    font-family: Rubik,Noto Sans Armenian,sans-serif;;
+    text-decoration: center;
+  }
+
+  .container5{
+    margin-top: -35px;
+    margin-left: 525px;
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+
+  .container5 p{
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+  }
+
+  .container .container5{
+    position: absolute;
+    top: 300px;
+    left: 200px;
+    font-size: 25px;
+    color: #000000;
+    font-family: Rubik,Noto Sans Armenian,sans-serif;;
+    text-decoration: center;
+  }
+
+  .container .container6{
+    position: absolute;
+    top: 265px;
+    left: 1235px;
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 20px;
+  }

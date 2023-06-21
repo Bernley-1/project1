@@ -1,0 +1,278 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  position: fixed; /*фиксированное меню*/
+  display: flex; 
+  justify-content: center; /*центрирование всех пунктов меню*/
+  align-items: center; 
+  background-color: #333; /*заливка каждого пункта меню*/
+  color: #fff; /*цвет текста каждого меню*/
+  font-size: 20px; /*размер текста*/
+  padding: 10px; /*внутренние отступы каждой кнопки меню*/
+  margin-top: -8px; /*верхний отступ*/
+  margin-left: -10px; /*левый отступ*/
+  width: 100%; /*ширина на весь экран*/
+  height: 50px; /*высота*/
+}
+
+ul {
+  display: flex; 
+  list-style: none; /*убираем подчеркивания*/
+}
+
+li {
+  margin-top: 5px;
+  margin-right: 20px; /*отступ между каждым пунктом меню*/
+}
+
+a {
+  color: #fff; /*ссылки*/
+  text-decoration: none; /*убираем подчеркивания*/
+}
+
+.burger {
+  display: none;
+  cursor: pointer; /*анимация при наведении*/
+}
+
+.line {
+  width: 30px; 
+  height: 3px;
+  margin: 0px;
+  background-color: #fff;
+}
+
+.menu a:hover {
+  
+  background: #76b900; /*закраска цвета при наведении на любой пункт меню*/
+}
+
+@media (max-width: 768px) {
+  .menu {
+    position: fixed;
+    height: 130px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul {
+    position: fixed;
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+
+  li {
+    margin: 0px 0;
+  }
+
+  .burger {
+    position: fixed;
+    display: block;
+  }
+}
+
+.blok1{
+  width: 100%;
+  height: 500px;
+  margin-left: 0px;
+  margin-right: 0px;
+  text-align: center;
+}
+
+.blok1 img{
+  margin-top: 50px;
+  width: 100%;
+  height: 500px;
+  margin-left: -20px;
+  margin-right: -20px;
+  text-align: center;
+}
+
+.navbar1 img{
+  height: 55px;
+  width: 155px;
+  margin-left: -300px;
+  margin-top: 30px;
+}
+
+.game-block {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    max-width: 100%;
+    margin: 0px;
+    font-size: 20px;
+    background-color: rgb(56, 54, 54);
+    color: white;
+  }
+  
+  .images {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .images img {
+    height: 100px;
+    width: 100px;
+    margin: 0 10px;
+  }
+
+  .partners-block {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 0px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-left: -30px;
+    opacity: 1;
+  }
+
+  .partners-block h2 {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 0px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 30px;
+    opacity: 1;
+  }
+
+  .partners-block .mvideo{
+    background-color: #e02a2a;
+    padding-top: 145px;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .partners-block :hover{
+    opacity: 0.7;
+  }
+
+  .partners-block .sber{
+    background-color: #000000;
+    padding-top: 145px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+
+  .partners-block .sber img{
+    
+    text-align: center;
+    border-radius: 10px;
+    height: 125px;
+  }
+
+  .partners-block .tele2{
+    background-color: #717171;
+    padding-top: 145px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+
+  .partners-block .tele2 img{
+    
+    text-align: center;
+    border-radius: 10px;
+    height: 125px;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar1 img{
+      margin-top: -10px;
+      margin-bottom: -10px;
+      margin-left: 0px;
+    }
+
+    .game-block{
+        padding-top: 160px;
+    }
+
+    .partners-block h2 {
+      width: 100%;
+      padding: 0px;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      margin-top: 30px;
+      margin-left: 30px;
+      opacity: 1;
+    }
+
+    .partners-block .mvideo{
+      background-color: #e02a2a;
+      padding-top: 140px;
+      margin-left: 45px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .partners-block .sber{
+      background-color: #000000;
+      padding-top: 140px;
+      margin-left: 15px;
+      margin-left: 45px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .partners-block .tele2{
+      background-color: #5f5f5f;
+      padding-top: 140px;
+      margin-left: 45px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .partners-block {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    ul {
+      flex-direction: column;
+      width: 100%;
+      display: none;
+    }
+  
+    li {
+      margin: 0px 0;
+    }
+  
+    .burger {
+      display: block;
+    }
+  }
+
+  h2 {
+    margin-top: 0;
+    font-size: 24px;
+  }
+  
+  img {
+    width: 300px;
+    height: auto;
+    display: inline-block;
+    margin: 20px;
+  }
+
+  .copyright{
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+  }
+
+  .copyright p{
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+   }
+  

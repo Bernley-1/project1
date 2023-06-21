@@ -1,0 +1,195 @@
+body{
+  background-color: #417a9b;
+}
+
+.menu {
+  position: fixed; /*фиксированное меню*/
+  display: flex; 
+  justify-content: center; /*центрирование всех пунктов меню*/
+  align-items: center; 
+  background-color: #333; /*заливка каждого пункта меню*/
+  color: #fff; /*цвет текста каждого меню*/
+  font-size: 20px; /*размер текста*/
+  padding: 10px; /*внутренние отступы каждой кнопки меню*/
+  margin-top: -8px; /*верхний отступ*/
+  margin-left: -10px; /*левый отступ*/
+  width: 100%; /*ширина на весь экран*/
+  height: 40px; /*высота*/
+}
+
+
+ul {
+  display: flex; 
+  list-style: none; /*убираем подчеркивания*/
+}
+
+li {
+  margin-right: 20px; /*отступ между каждым пунктом меню*/
+}
+
+a {
+  color: #fff; /*ссылки*/
+  text-decoration: none; /*убираем подчеркивания*/
+}
+
+.burger {
+  display: none;
+  cursor: pointer; /*анимация при наведении*/
+}
+
+.line {
+  width: 30px; 
+  height: 3px;
+  margin: 0px;
+  background-color: #fff;
+}
+
+.menu li a:hover {
+  background-color: #76b900; /*закраска цвета при наведении на любой пункт меню*/
+}
+
+
+
+.navbar1 img{
+  height: 55px;
+  width: 155px;
+  margin-left: -300px;
+}
+
+#filter {
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+#filter label {
+  text-align: center;
+  margin-right: 10px;
+  margin-top: 150px;
+}
+
+.game {
+  height: 510px;
+  width: 300px;
+  margin-left: 820px;
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.game button{
+  width: 100px;
+  height: 50px;
+  color: white;
+  border-radius: 5px;
+  background: #76b900;
+}
+
+.game button{
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  background: #76b900;
+}
+
+.game h3{
+  margin-top: 0px;
+}
+
+
+
+.free{
+  margin-top: 100px;
+}
+
+.paid{
+  margin-top: 100px;
+}
+
+.russian{
+  margin-top: 100px;
+}
+
+.subtitles{
+  margin-top: 100px;
+}
+
+
+@media (max-width: 768px) {
+  
+
+  .menu {
+    position: fixed;
+    margin-left: -20px;
+    width: 100%;
+    height: 130px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul {
+    position: fixed;
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+
+  li {
+    margin: 0px 0;
+  }
+
+  .burger {
+    width: 100%;
+    position: fixed;
+    display: block;
+  }
+
+  .navbar1 img{
+    height: 55px;
+    width: 155px;
+    margin-left: 15px;
+    margin-top: 0px;
+  }
+
+  #filter {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 150px;
+  }
+  
+  #filter label {
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 150px;
+  }
+  
+ 
+  
+  
+  
+
+  
+.free1{
+    flex-direction: column;
+    margin-left: 250px;
+    margin-top: 150px;
+  }
+  
+  .paid{
+    margin-top: 100px;
+  }
+  
+  .russian{
+    margin-top: 100px;
+  }
+  
+  .subtitles{
+    margin-top: 100px;
+  }
+
+  #games{
+    margin-left: -790px;
+  }
+}
